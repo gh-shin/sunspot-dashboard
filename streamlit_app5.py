@@ -53,13 +53,13 @@ fig1 = model.plot(forecast)
 plt.title("Prophet Forecast Plot")
 plt.xlabel("ds")
 plt.ylabel("y")
-plt.show()
+st.pyplot(fig1)
 
 
 st.subheader("📊 Forecast Components")
 # TODO: model.plot_components()를 사용하여 구성요소를 시각화하세요.
 fig2 = model.plot_components(forecast)
-plt.show()
+st.pyplot(fig2)
 
 # ----------------------------------
 # [5] 커스텀 시각화: 실제값 vs 예측값 + 신뢰구간
