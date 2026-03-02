@@ -34,7 +34,7 @@ model = Prophet(
 # 약 11년 주기의 태양 흑점 사이클을 커스텀 시즌얼리티로 추가 (fourier_order는 데이터에 따라 조정)
 model.add_seasonality(name='sunspot_cycle', period=11, fourier_order=5)
 # 모델 학습
-model.fit(processed_df)
+model.fit(df)
 
 
 # ----------------------------------
